@@ -1,0 +1,18 @@
+[project]
+name = "playwright-wndtoend"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "allure-pytest>=2.15.3",
+    "openpyexcel>=2.5.14",
+    "openpyxl>=3.1.5",
+    "playwright>=1.57.0",
+    "pytest>=9.0.2",
+    "pytest-html>=4.1.1",
+    "pytest-order>=1.3.0",
+    "pytest-playwright>=0.7.2",
+    "pytest-rerunfailures>=16.1",
+    "pytest-xdist>=3.8.0",
+]
