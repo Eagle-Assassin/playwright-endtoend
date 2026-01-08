@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "allure-pytest>=2.15.3",
+    "faker>=40.1.0",
     "openpyexcel>=2.5.14",
     "openpyxl>=3.1.5",
     "playwright>=1.57.0",
