@@ -19,11 +19,11 @@ class ProductPage:
         self.page=page
 
         #locators
-        self.txt_quantity = page.locator('input[name="quantity"]')
-        self.btn_add_to_cart = page.locator('#button-cart')
-        self.cnf_msg=page.locator('.alert.alert-success.alert-dismissible')
-        self.btn_items = page.locator("#cart")
-        self.lnk_view_cart = page.locator('strong:has-text("View Cart")')
+        self.txt_quantity = self.page.locator('input[name="quantity"]')
+        self.btn_add_to_cart = self.page.locator('.')
+        self.cnf_msg=self.page.locator('.alert.alert-success.alert-dismissible')
+        self.btn_items = self.page.locator("#cart")
+        self.lnk_view_cart = self.page.locator('strong:has-text("View Cart")')
 
     #========= Quantity Methods ==========
     def set_quantity(self,qty:str):
@@ -44,11 +44,11 @@ class ProductPage:
         """
         Click the "add to Cart" button to add the selected product
         """
-
         try:
-            self.btn_add_to_cart.click()
-        
+            print("Add to Cart")
+            self.btn_add_to_cart.click()        
         except Exception as e:
+            print("Add to Cart Exception")
             print(f"Error while clicking 'Add to Cart':{e}")
             raise
 

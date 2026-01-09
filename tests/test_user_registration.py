@@ -23,13 +23,13 @@ After submitting valid details, the system should display the message:
 "Your Account Has Been Created!"
 """
 
-from pages.home_page import Homepage
+from pages.home_page import HomePage
 from pages.registration_page import RegistrationPage
 from utilities.random_data_util import RandomDataUtil
 from playwright.sync_api import expect
 
 def test_user_registration(page):
-    homepage=Homepage(page)
+    homepage=HomePage(page)
 
     homepage.click_my_account()
     homepage.click_register()

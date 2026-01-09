@@ -1,0 +1,2 @@
+[OK] Starting browser: ['chromium']
+[OK] Headless mode: True (headed=False)
