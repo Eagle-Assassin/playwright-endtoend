@@ -1,6 +1,6 @@
 from playwright.sync_api import Page
 
-class Homepage:
+class HomePage:
     def __init__(self,page:Page):
         self.page=page
 
@@ -8,7 +8,7 @@ class Homepage:
         self.lnk_myaccount=page.locator("a[title='My Account'] span[class='hidden-xs hidden-sm hidden-md']")
         self.lnk_register=page.get_by_role("link", name="Register")
         # self.lnk_register=page.locator("a has-text('Register')")
-        self.lnk_login=page.locator("a has-text('Login)")
+        self.lnk_login=page.locator("a[href='https://tutorialsninja.com/demo/index.php?route=account/login']")
         self.txt_searchbox=page.locator("input[placeholder='Search']")
         self.btn_search=page.locator("#search button[type='button']")
 

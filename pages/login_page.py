@@ -32,11 +32,19 @@ class LoginPage:
     def set_password(self,password:str):
         "Enter the email address in the password field"
         try:
-            self.txt_email_address.fill(password)
+            self.txt_password.fill(password)
         except Exception as E:
             print(f"Exception while entering password: {E}")
     
-    def click_login(self,email:str,password:str):
+    def click_login(self):
+        """Click the Login button."""
+        try:
+            self.btn_login.click()
+        except Exception as e:
+            print(f" Exception while clicking Login button: {e}")
+            raise
+    
+    def login(self,email:str,password:str):
         """perform the complete login operation
         1. Enter email
         2. Enter password

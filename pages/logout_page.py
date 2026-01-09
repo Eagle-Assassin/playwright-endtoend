@@ -5,7 +5,7 @@
 #to separate page locators and actions from the test logic
 
 from playwright.sync_api import Page
-from pages.home_page import Homepage #Adjust this import path as per your project structure
+from pages.home_page import HomePage #Adjust this import path as per your project structure
 
 class LogoutPage:
     def __init__(self,page:Page):

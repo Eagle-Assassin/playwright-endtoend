@@ -1,0 +1,14 @@
+[OK] Starting browser: ['chromium']
+[OK] Headless mode: False (headed=True)
+[INFO] Navigating to: https://tutorialsninja.com/demo/
+[TRACE] Tracing enabled - capturing screenshots and actions
+Exception while clicking 'Register' link under My Account : Locator.click: Unexpected token "has-text(" while parsing css selector "a has-text('Register)". Did you mean to CSS.escape it?
+Call log:
+  - waiting for a has-text('Register)
+
+[RESULT] Test 'test_user_registration' result: [FAIL]
+[SAVE] Trace saved: reports/traces/test_user_registration_trace.zip
+[SAVE] Screenshot saved: reports/screenshots/test_user_registration.png
+[ATTACH] Screenshot attached to Allure report
+[ATTACH] Video attached to Allure report
+[CLEANUP] Closing browser context and stopping Playwright...

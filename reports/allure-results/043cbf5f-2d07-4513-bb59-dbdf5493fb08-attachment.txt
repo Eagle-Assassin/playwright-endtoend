@@ -1,0 +1,16 @@
+[OK] Starting browser: ['chromium']
+[OK] Headless mode: False (headed=True)
+[INFO] Navigating to: https://tutorialsninja.com/demo/
+[TRACE] Tracing enabled - capturing screenshots and actions
+✅ Registration completed successfully!
+✅ Logout completed successfully!
+✅ Login completed successfully!
+Add to Cart
+Add to Cart Exception
+Error while clicking 'Add to Cart':Locator.click: Target page, context or browser has been closed
+Call log:
+  - waiting for locator(".btn btn-primary btn-lg btn-block")
+
+[RESULT] Test 'test_end_to_end_flow' result: [FAIL]
+[SAVE] Trace saved: reports/traces/test_end_to_end_flow_trace.zip
+[CLEANUP] Closing browser context and stopping Playwright...
